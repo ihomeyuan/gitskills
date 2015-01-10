@@ -1,0 +1,250 @@
+//
+//  ViewController.m
+//  MusicPlayer
+//
+//  Created by tonyguan on 14-1-10.
+//  Copyright (c) 2014年 tonyguan. All rights reserved.
+//
+
+#import "ViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
+
+@interface ViewController () <UITextFieldDelegate>
+
+@property (nonatomic, weak) IBOutlet UIButton *playButton;
+
+@property (nonatomic, weak) IBOutlet UILabel *songTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *songArtistLabel;
+@property (nonatomic, weak) IBOutlet UILabel *songAlbumLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *songArtworkView;
+
+@property (strong,nonatomic) MPMusicPlayerController *iPodController;
+
+
+@property (nonatomic, strong) NSArray *playlist;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+- (IBAction)play:(id)sender;
+
+
+- (IBAction)playPreviousSong:(id)sender;
+- (IBAction)playNextSong:(id)sender;
+
+@end
+
+@implementation ViewController
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.songArtworkView.image = [UIImage imageNamed:@"cover.png"];
+    self.iPodController = [MPMusicPlayerController iPodMusicPlayer];
+    
+    self.textField.delegate = self;
+    self.playButton.enabled = NO;
+}
+
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+	
+    if (self.iPodController.playbackState == MPMusicPlaybackStatePlaying) {
+        [self.playButton setTitle:@"暂停" forState:UIControlStateNormal];
+	} else {
+        [self.playButton setTitle:@"播放" forState:UIControlStateNormal];
+	}
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(musicPlayerStateChanged:)
+     name:MPMusicPlayerControllerPlaybackStateDidChangeNotification
+     object:self.iPodController];
+    
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(nowPlayingItemIsChanged:)
+     name:MPMusicPlayerControllerNowPlayingItemDidChangeNotification
+     object:self.iPodController];
+    
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(volumeChanged:)
+     name:MPMusicPlayerControllerVolumeDidChangeNotification
+     object:self.iPodController];
+    
+    [self.iPodController beginGeneratingPlaybackNotifications];
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMusicPlayerControllerPlaybackStateDidChangeNotification
+     object:self.iPodController];
+    
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMusicPlayerControllerNowPlayingItemDidChangeNotification
+     object:self.iPodController];
+    
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMusicPlayerControllerVolumeDidChangeNotification
+     object:self.iPodController];
+    
+    [self.iPodController endGeneratingPlaybackNotifications];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+
+
+- (IBAction)play:(id)sender {
+    
+	MPMediaItem *nowPlayingItem= [self.iPodController nowPlayingItem];
+	NSLog (@"%@", nowPlayingItem);
+    if (nowPlayingItem == nil) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                            message:@"请先在音乐应用中选择播放一首曲目。"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Ok"
+                                                  otherButtonTitles: nil];
+        [alertView show];
+        return;
+    } else {
+        [self updateView:nowPlayingItem];
+    }
+    
+    MPMediaItemCollection * itemCollection= [MPMediaItemCollection collectionWithItems: self.playlist];
+    
+    [self.iPodController setQueueWithItemCollection:itemCollection];
+    
+    if (self.iPodController.playbackState == MPMusicPlaybackStatePlaying) {
+		[self.iPodController pause];
+        [self.playButton setTitle:@"播放" forState:UIControlStateNormal];
+        
+	} else {
+		[self.iPodController play];
+        [self.playButton setTitle:@"暂停" forState:UIControlStateNormal];
+        
+	}
+}
+
+- (IBAction)playPreviousSong:(id)sender {
+    [self.iPodController skipToPreviousItem];
+    //    [self updateView:self.iPodController.nowPlayingItem];
+}
+
+- (IBAction)playNextSong:(id)sender {
+    [self.iPodController skipToNextItem];
+    //    [self updateView:self.iPodController.nowPlayingItem];
+}
+
+-(void) updateView:(MPMediaItem*)nowPlayingItem{
+    
+    self.songTitleLabel.text = [nowPlayingItem valueForProperty:MPMediaItemPropertyTitle];
+    self.songArtistLabel.text = [nowPlayingItem valueForProperty:MPMediaItemPropertyArtist];
+    self.songAlbumLabel.text = [nowPlayingItem valueForProperty:MPMediaItemPropertyAlbumTitle];
+    MPMediaItemArtwork *coverArt = [nowPlayingItem valueForProperty:MPMediaItemPropertyArtwork];
+    
+    self.songArtworkView.image = [UIImage imageNamed:@"cover.png"];
+    
+    
+    if (coverArt) {
+        CGSize imageSize = {100.0, 100.0};
+        UIImage *image = [coverArt imageWithSize:imageSize];
+        if (image) {
+            self.songArtworkView.image = image ;
+        }
+    }
+    
+    
+}
+
+
+
+#pragma mark --通知方法
+
+- (void) musicPlayerStateChanged:(NSNotification *)paramNotification{
+    
+    NSLog(@"播放状态变化。");
+    
+    //获得播放状态
+    NSNumber *stateAsObject = [paramNotification.userInfo
+                               objectForKey:@"MPMusicPlayerControllerPlaybackStateKey"];
+    
+    NSInteger state = [stateAsObject integerValue];
+    
+    switch (state){
+        case MPMusicPlaybackStateStopped:{
+            NSLog(@"MPMusicPlaybackStateStopped");
+            break;
+        }
+        case MPMusicPlaybackStatePlaying:{
+            NSLog(@"MPMusicPlaybackStatePlaying");
+            break;
+        }
+        case MPMusicPlaybackStatePaused:{
+            NSLog(@"MPMusicPlaybackStatePaused");
+            break;
+        }
+        case MPMusicPlaybackStateInterrupted:{
+            NSLog(@"MPMusicPlaybackStateInterrupted");
+            break;
+        }
+        case MPMusicPlaybackStateSeekingForward:{
+            NSLog(@"MPMusicPlaybackStateSeekingForward");
+            break;
+        }
+        case MPMusicPlaybackStateSeekingBackward:{
+            NSLog(@"MPMusicPlaybackStateSeekingBackward");
+            break;
+        }
+    }
+    
+}
+- (void) nowPlayingItemIsChanged:(NSNotification *)paramNotification{
+    [self updateView:self.iPodController.nowPlayingItem];
+}
+
+- (void) volumeChanged:(NSNotification *)paramNotification{
+    NSLog(@"音量变化。");
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    MPMediaQuery *query = [[MPMediaQuery alloc] init];
+    
+    
+    MPMediaPropertyPredicate *songPredicate = [MPMediaPropertyPredicate
+                                               predicateWithValue:textField.text
+                                               forProperty:MPMediaItemPropertyTitle
+                                               comparisonType:MPMediaPredicateComparisonContains];
+    [query addFilterPredicate:songPredicate];
+    
+    self.playlist  = [query items];
+    
+    if ([self.playlist count] > 0) {
+        self.playButton.enabled = YES;
+    } else {
+        self.playButton.enabled = NO;
+    }
+    
+    [self.textField resignFirstResponder];
+    return YES;
+}
+
+
+
+@end

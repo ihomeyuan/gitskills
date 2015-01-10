@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE379B2187DB19A00124E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE379B1187DB19A00124E1C /* Foundation.framework */; };
+		CAE379B4187DB19A00124E1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE379B3187DB19A00124E1C /* CoreGraphics.framework */; };
+		CAE379B6187DB19A00124E1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE379B5187DB19A00124E1C /* UIKit.framework */; };
+		CAE379BC187DB19A00124E1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAE379BA187DB19A00124E1C /* InfoPlist.strings */; };
+		CAE379BE187DB19A00124E1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE379BD187DB19A00124E1C /* main.m */; };
+		CAE379C2187DB19A00124E1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE379C1187DB19A00124E1C /* AppDelegate.m */; };
+		CAE379C5187DB19A00124E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE379C3187DB19A00124E1C /* Main.storyboard */; };
+		CAE379C8187DB19A00124E1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE379C7187DB19A00124E1C /* ViewController.m */; };
+		CAE379CA187DB19A00124E1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE379C9187DB19A00124E1C /* Images.xcassets */; };
+		CAE379D1187DB19A00124E1C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE379D0187DB19A00124E1C /* XCTest.framework */; };
+		CAE379D2187DB19A00124E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE379B1187DB19A00124E1C /* Foundation.framework */; };
+		CAE379D3187DB19A00124E1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE379B5187DB19A00124E1C /* UIKit.framework */; };
+		CAE379DB187DB19A00124E1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAE379D9187DB19A00124E1C /* InfoPlist.strings */; };
+		CAE379DD187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE379DC187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE379D4187DB19A00124E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE379A6187DB19A00124E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE379AD187DB19A00124E1C;
+			remoteInfo = VideoRecord_UIImagePickerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAE379AE187DB19A00124E1C /* VideoRecord_UIImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecord_UIImagePickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE379B1187DB19A00124E1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CAE379B3187DB19A00124E1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CAE379B5187DB19A00124E1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CAE379B9187DB19A00124E1C /* VideoRecord_UIImagePickerController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoRecord_UIImagePickerController-Info.plist"; sourceTree = "<group>"; };
+		CAE379BB187DB19A00124E1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAE379BD187DB19A00124E1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAE379BF187DB19A00124E1C /* VideoRecord_UIImagePickerController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoRecord_UIImagePickerController-Prefix.pch"; sourceTree = "<group>"; };
+		CAE379C0187DB19A00124E1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAE379C1187DB19A00124E1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAE379C4187DB19A00124E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE379C6187DB19A00124E1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CAE379C7187DB19A00124E1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CAE379C9187DB19A00124E1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CAE379CF187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecord_UIImagePickerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE379D0187DB19A00124E1C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CAE379D8187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoRecord_UIImagePickerControllerTests-Info.plist"; sourceTree = "<group>"; };
+		CAE379DA187DB19A00124E1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAE379DC187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecord_UIImagePickerControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE379AB187DB19A00124E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE379B4187DB19A00124E1C /* CoreGraphics.framework in Frameworks */,
+				CAE379B6187DB19A00124E1C /* UIKit.framework in Frameworks */,
+				CAE379B2187DB19A00124E1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE379CC187DB19A00124E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE379D1187DB19A00124E1C /* XCTest.framework in Frameworks */,
+				CAE379D3187DB19A00124E1C /* UIKit.framework in Frameworks */,
+				CAE379D2187DB19A00124E1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE379A5187DB19A00124E1C = {
+			isa = PBXGroup;
+			children = (
+				CAE379B7187DB19A00124E1C /* VideoRecord_UIImagePickerController */,
+				CAE379D6187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests */,
+				CAE379B0187DB19A00124E1C /* Frameworks */,
+				CAE379AF187DB19A00124E1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE379AF187DB19A00124E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE379AE187DB19A00124E1C /* VideoRecord_UIImagePickerController.app */,
+				CAE379CF187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE379B0187DB19A00124E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAE379B1187DB19A00124E1C /* Foundation.framework */,
+				CAE379B3187DB19A00124E1C /* CoreGraphics.framework */,
+				CAE379B5187DB19A00124E1C /* UIKit.framework */,
+				CAE379D0187DB19A00124E1C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAE379B7187DB19A00124E1C /* VideoRecord_UIImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				CAE379C0187DB19A00124E1C /* AppDelegate.h */,
+				CAE379C1187DB19A00124E1C /* AppDelegate.m */,
+				CAE379C3187DB19A00124E1C /* Main.storyboard */,
+				CAE379C6187DB19A00124E1C /* ViewController.h */,
+				CAE379C7187DB19A00124E1C /* ViewController.m */,
+				CAE379C9187DB19A00124E1C /* Images.xcassets */,
+				CAE379B8187DB19A00124E1C /* Supporting Files */,
+			);
+			path = VideoRecord_UIImagePickerController;
+			sourceTree = "<group>";
+		};
+		CAE379B8187DB19A00124E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE379B9187DB19A00124E1C /* VideoRecord_UIImagePickerController-Info.plist */,
+				CAE379BA187DB19A00124E1C /* InfoPlist.strings */,
+				CAE379BD187DB19A00124E1C /* main.m */,
+				CAE379BF187DB19A00124E1C /* VideoRecord_UIImagePickerController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE379D6187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE379DC187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.m */,
+				CAE379D7187DB19A00124E1C /* Supporting Files */,
+			);
+			path = VideoRecord_UIImagePickerControllerTests;
+			sourceTree = "<group>";
+		};
+		CAE379D7187DB19A00124E1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE379D8187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests-Info.plist */,
+				CAE379D9187DB19A00124E1C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE379AD187DB19A00124E1C /* VideoRecord_UIImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE379E0187DB19A00124E1C /* Build configuration list for PBXNativeTarget "VideoRecord_UIImagePickerController" */;
+			buildPhases = (
+				CAE379AA187DB19A00124E1C /* Sources */,
+				CAE379AB187DB19A00124E1C /* Frameworks */,
+				CAE379AC187DB19A00124E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoRecord_UIImagePickerController;
+			productName = VideoRecord_UIImagePickerController;
+			productReference = CAE379AE187DB19A00124E1C /* VideoRecord_UIImagePickerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE379CE187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE379E3187DB19A00124E1C /* Build configuration list for PBXNativeTarget "VideoRecord_UIImagePickerControllerTests" */;
+			buildPhases = (
+				CAE379CB187DB19A00124E1C /* Sources */,
+				CAE379CC187DB19A00124E1C /* Frameworks */,
+				CAE379CD187DB19A00124E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE379D5187DB19A00124E1C /* PBXTargetDependency */,
+			);
+			name = VideoRecord_UIImagePickerControllerTests;
+			productName = VideoRecord_UIImagePickerControllerTests;
+			productReference = CAE379CF187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE379A6187DB19A00124E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tonyguan;
+				TargetAttributes = {
+					CAE379CE187DB19A00124E1C = {
+						TestTargetID = CAE379AD187DB19A00124E1C;
+					};
+				};
+			};
+			buildConfigurationList = CAE379A9187DB19A00124E1C /* Build configuration list for PBXProject "VideoRecord_UIImagePickerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE379A5187DB19A00124E1C;
+			productRefGroup = CAE379AF187DB19A00124E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE379AD187DB19A00124E1C /* VideoRecord_UIImagePickerController */,
+				CAE379CE187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE379AC187DB19A00124E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE379CA187DB19A00124E1C /* Images.xcassets in Resources */,
+				CAE379BC187DB19A00124E1C /* InfoPlist.strings in Resources */,
+				CAE379C5187DB19A00124E1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE379CD187DB19A00124E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE379DB187DB19A00124E1C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE379AA187DB19A00124E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE379C8187DB19A00124E1C /* ViewController.m in Sources */,
+				CAE379C2187DB19A00124E1C /* AppDelegate.m in Sources */,
+				CAE379BE187DB19A00124E1C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE379CB187DB19A00124E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE379DD187DB19A00124E1C /* VideoRecord_UIImagePickerControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE379D5187DB19A00124E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE379AD187DB19A00124E1C /* VideoRecord_UIImagePickerController */;
+			targetProxy = CAE379D4187DB19A00124E1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE379BA187DB19A00124E1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE379BB187DB19A00124E1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CAE379C3187DB19A00124E1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE379C4187DB19A00124E1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE379D9187DB19A00124E1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE379DA187DB19A00124E1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE379DE187DB19A00124E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAE379DF187DB19A00124E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE379E1187DB19A00124E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoRecord_UIImagePickerController/VideoRecord_UIImagePickerController-Prefix.pch";
+				INFOPLIST_FILE = "VideoRecord_UIImagePickerController/VideoRecord_UIImagePickerController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CAE379E2187DB19A00124E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoRecord_UIImagePickerController/VideoRecord_UIImagePickerController-Prefix.pch";
+				INFOPLIST_FILE = "VideoRecord_UIImagePickerController/VideoRecord_UIImagePickerController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CAE379E4187DB19A00124E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoRecord_UIImagePickerController.app/VideoRecord_UIImagePickerController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoRecord_UIImagePickerController/VideoRecord_UIImagePickerController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VideoRecord_UIImagePickerControllerTests/VideoRecord_UIImagePickerControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CAE379E5187DB19A00124E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoRecord_UIImagePickerController.app/VideoRecord_UIImagePickerController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoRecord_UIImagePickerController/VideoRecord_UIImagePickerController-Prefix.pch";
+				INFOPLIST_FILE = "VideoRecord_UIImagePickerControllerTests/VideoRecord_UIImagePickerControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE379A9187DB19A00124E1C /* Build configuration list for PBXProject "VideoRecord_UIImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE379DE187DB19A00124E1C /* Debug */,
+				CAE379DF187DB19A00124E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE379E0187DB19A00124E1C /* Build configuration list for PBXNativeTarget "VideoRecord_UIImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE379E1187DB19A00124E1C /* Debug */,
+				CAE379E2187DB19A00124E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAE379E3187DB19A00124E1C /* Build configuration list for PBXNativeTarget "VideoRecord_UIImagePickerControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE379E4187DB19A00124E1C /* Debug */,
+				CAE379E5187DB19A00124E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE379A6187DB19A00124E1C /* Project object */;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iek-DM-4Vl"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJL-f9-EAe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReC-fD-fkm">
+                                <rect key="frame" x="81" y="123" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fmB-G4-61C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放系统声音">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSystemSound:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cnV-mu-xEK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-sX-p7P">
+                                <rect key="frame" x="81" y="359" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="振动">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vibrate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IMM-uh-EIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-dB-0WX">
+                                <rect key="frame" x="81" y="232" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VAJ-OI-UUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="发出警告">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z4g-I4-oV3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ReC-fD-fkm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="81" id="G18-4F-iIh"/>
+                            <constraint firstItem="EJL-f9-EAe" firstAttribute="top" secondItem="pPt-sX-p7P" secondAttribute="bottom" constant="179" id="IBe-wX-cEn"/>
+                            <constraint firstItem="8Cb-dB-0WX" firstAttribute="trailing" secondItem="ReC-fD-fkm" secondAttribute="trailing" id="Rq9-IH-MQE"/>
+                            <constraint firstAttribute="trailing" secondItem="ReC-fD-fkm" secondAttribute="trailing" constant="72" id="U6u-7N-sIn"/>
+                            <constraint firstItem="8Cb-dB-0WX" firstAttribute="top" secondItem="ReC-fD-fkm" secondAttribute="bottom" constant="79" id="YvO-KF-i7l"/>
+                            <constraint firstItem="pPt-sX-p7P" firstAttribute="leading" secondItem="8Cb-dB-0WX" secondAttribute="leading" id="azO-AI-Ism"/>
+                            <constraint firstItem="ReC-fD-fkm" firstAttribute="top" secondItem="iek-DM-4Vl" secondAttribute="bottom" constant="103" id="iFN-ep-V83"/>
+                            <constraint firstItem="pPt-sX-p7P" firstAttribute="top" secondItem="8Cb-dB-0WX" secondAttribute="bottom" constant="97" id="iRL-L7-uPA"/>
+                            <constraint firstItem="8Cb-dB-0WX" firstAttribute="trailing" secondItem="pPt-sX-p7P" secondAttribute="trailing" id="lWd-44-IiN"/>
+                            <constraint firstItem="ReC-fD-fkm" firstAttribute="leading" secondItem="8Cb-dB-0WX" secondAttribute="leading" id="x5v-2a-57o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

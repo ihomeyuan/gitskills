@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gfo-sK-y23"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ms1-YJ-dWo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-lJ-aLL">
+                                <rect key="frame" x="77" y="142" width="163" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="91Y-mO-Ifd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YSi-AQ-lSF"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e5s-9b-NRC">
+                                <rect key="frame" x="165" y="327" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchLoop:" destination="vXZ-lx-hvc" eventType="valueChanged" id="DDW-DV-9z0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="是否循环" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgJ-dh-lIx">
+                                <rect key="frame" x="75" y="335" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ms1-YJ-dWo" firstAttribute="top" secondItem="CgJ-dh-lIx" secondAttribute="bottom" constant="212" id="7Mx-dM-SxX"/>
+                            <constraint firstItem="e5s-9b-NRC" firstAttribute="leading" secondItem="CgJ-dh-lIx" secondAttribute="trailing" constant="22" id="7Ns-xt-Csq"/>
+                            <constraint firstItem="CgJ-dh-lIx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="75" id="EQl-41-LdE"/>
+                            <constraint firstAttribute="trailing" secondItem="TUg-lJ-aLL" secondAttribute="trailing" constant="80" id="G73-U2-yFX"/>
+                            <constraint firstItem="Ms1-YJ-dWo" firstAttribute="top" secondItem="e5s-9b-NRC" secondAttribute="bottom" constant="210" id="dK1-2L-Igc"/>
+                            <constraint firstItem="TUg-lJ-aLL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="77" id="oT0-Qk-b4L"/>
+                            <constraint firstItem="TUg-lJ-aLL" firstAttribute="top" secondItem="gfo-sK-y23" secondAttribute="bottom" constant="122" id="vbu-bA-ens"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="TUg-lJ-aLL" id="6RT-Xw-nhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
