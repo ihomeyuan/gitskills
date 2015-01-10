@@ -31,16 +31,17 @@
 	
 	NSString* imagePath = [[NSBundle mainBundle] pathForResource:@"dog" ofType:@"png"]; //rabbit
 	UIImage* myImageObj = [[UIImage alloc] initWithContentsOfFile:imagePath];
-	
-	[myImageObj drawInRect:CGRectMake(0, 40, 320, 400)];// [myImageObj drawAsPatternInRect:CGRectMake(0, 0, 320, 400)];
+    //[myImageObj drawAtPoint:CGPointMake(0, 40)];//dog.png == 512*512 pixel 在iPhone5上最多只能显示320*568
+	//[myImageObj drawInRect:CGRectMake(0, 40, 320, 500)];//将整个图片绘制到指定区域，根据区域拉伸图像
+    [myImageObj drawAsPatternInRect:CGRectMake(0, 0, 320, 400)];//将图片平铺到指定区域。（按图片原始大小，在指定区域绘制，没有绘制满区域就再绘制一行或一列）
 
     
-	NSString *s = @"我的小狗";
+	NSString *s = @"我的小狗说的分手的";
     
     UIFont *font = [UIFont systemFontOfSize:34];
     NSDictionary *attr = @{NSFontAttributeName:font};
-	[s drawAtPoint:CGPointMake(100, 20) withAttributes:attr];
-    
+	//[s drawAtPoint:CGPointMake(100, 20) withAttributes:attr];//默认绘制一行，如果receiver中有换行符，那就在正下方再起一行
+    [s drawInRect:CGRectMake(0, 0, 200, 400) withAttributes:attr];//这个方法绘制指定区域能绘制的尽可能多的字符，如果绘制不下了，裁去剩下的字符。
 }
 
 @end
