@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XG6-LE-0Tx"/>
+                        <viewControllerLayoutGuide type="bottom" id="dYn-Cl-Lor"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Artist Name" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="171-fN-Nh9">
+                                <rect key="frame" x="85" y="464" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UZa-6N-eqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Album Name" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8j2-Xj-ykO">
+                                <rect key="frame" x="85" y="493" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mOT-Nv-zbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twm-m6-6jT">
+                                <rect key="frame" x="31" y="76" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="afs-Qb-0mh"/>
+                                    <constraint firstAttribute="width" constant="78" id="e8I-R3-Lss"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="上一首">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPreviousSong:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hQs-ef-qB4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-mT-Nd5">
+                                <rect key="frame" x="55" y="187" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyd-N9-AnQ">
+                                <rect key="frame" x="227" y="76" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="下一首">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playNextSong:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mbe-Pe-aNy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Song Name" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qyY-Lq-aUA">
+                                <rect key="frame" x="85" y="435" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ILZ-YO-Rah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTs-KF-hd4">
+                                <rect key="frame" x="133" y="76" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="7z8-IK-meD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jaa-Sj-Q25"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入查询条件" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ac-ne-3mF">
+                                <rect key="frame" x="88" y="121" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="EHc-Xf-hmc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dyd-N9-AnQ" secondAttribute="trailing" constant="15" id="4Z6-KS-PVF"/>
+                            <constraint firstItem="qyY-Lq-aUA" firstAttribute="leading" secondItem="171-fN-Nh9" secondAttribute="leading" id="4mv-k5-6ZR"/>
+                            <constraint firstItem="WTs-KF-hd4" firstAttribute="bottom" secondItem="dyd-N9-AnQ" secondAttribute="bottom" id="6cG-PI-XQb"/>
+                            <constraint firstAttribute="trailing" secondItem="qyY-Lq-aUA" secondAttribute="trailing" constant="35" id="CBB-fA-6GU"/>
+                            <constraint firstItem="171-fN-Nh9" firstAttribute="top" secondItem="qyY-Lq-aUA" secondAttribute="bottom" constant="8" symbolic="YES" id="F6N-uv-yD2"/>
+                            <constraint firstItem="Twm-m6-6jT" firstAttribute="bottom" secondItem="WTs-KF-hd4" secondAttribute="bottom" id="F7Y-kX-95B"/>
+                            <constraint firstItem="Twm-m6-6jT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="31" id="GGM-rM-vIM"/>
+                            <constraint firstItem="wrv-mT-Nd5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="55" id="Jcd-g4-koM"/>
+                            <constraint firstItem="WTs-KF-hd4" firstAttribute="leading" secondItem="Twm-m6-6jT" secondAttribute="trailing" constant="24" id="NDB-1w-BRe"/>
+                            <constraint firstItem="4ac-ne-3mF" firstAttribute="top" secondItem="Twm-m6-6jT" secondAttribute="bottom" constant="15" id="OBx-v6-lbG"/>
+                            <constraint firstAttribute="trailing" secondItem="wrv-mT-Nd5" secondAttribute="trailing" constant="65" id="SU9-Gv-6JJ"/>
+                            <constraint firstItem="wrv-mT-Nd5" firstAttribute="top" secondItem="4ac-ne-3mF" secondAttribute="bottom" constant="36" id="Vhv-ps-gQ8"/>
+                            <constraint firstItem="8j2-Xj-ykO" firstAttribute="top" secondItem="171-fN-Nh9" secondAttribute="bottom" constant="8" symbolic="YES" id="Vvf-I0-o4B"/>
+                            <constraint firstItem="WTs-KF-hd4" firstAttribute="top" secondItem="dyd-N9-AnQ" secondAttribute="top" id="aZf-CX-Yjq"/>
+                            <constraint firstItem="8j2-Xj-ykO" firstAttribute="trailing" secondItem="171-fN-Nh9" secondAttribute="trailing" id="fLB-lf-YMJ"/>
+                            <constraint firstItem="qyY-Lq-aUA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="85" id="hFp-96-WhK"/>
+                            <constraint firstItem="171-fN-Nh9" firstAttribute="leading" secondItem="8j2-Xj-ykO" secondAttribute="leading" id="jsb-F6-k4Q"/>
+                            <constraint firstAttribute="trailing" secondItem="171-fN-Nh9" secondAttribute="trailing" constant="42" id="kUt-q2-B7y"/>
+                            <constraint firstItem="dyd-N9-AnQ" firstAttribute="leading" secondItem="WTs-KF-hd4" secondAttribute="trailing" constant="28" id="nMH-4F-znP"/>
+                            <constraint firstItem="dYn-Cl-Lor" firstAttribute="top" secondItem="8j2-Xj-ykO" secondAttribute="bottom" constant="54" id="nXn-0d-2eE"/>
+                            <constraint firstItem="Twm-m6-6jT" firstAttribute="top" secondItem="XG6-LE-0Tx" secondAttribute="bottom" constant="56" id="t3A-oj-JMh"/>
+                            <constraint firstItem="WTs-KF-hd4" firstAttribute="top" secondItem="Twm-m6-6jT" secondAttribute="top" id="twC-zy-wXq"/>
+                            <constraint firstItem="qyY-Lq-aUA" firstAttribute="top" secondItem="wrv-mT-Nd5" secondAttribute="bottom" constant="48" id="ujJ-kf-ZtN"/>
+                            <constraint firstItem="4ac-ne-3mF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="88" id="zF7-bp-Odj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="WTs-KF-hd4" id="c1t-jI-Lht"/>
+                        <outlet property="songAlbumLabel" destination="8j2-Xj-ykO" id="DHX-zM-fki"/>
+                        <outlet property="songArtistLabel" destination="171-fN-Nh9" id="7IO-Cj-Php"/>
+                        <outlet property="songArtworkView" destination="wrv-mT-Nd5" id="SL4-s5-jO7"/>
+                        <outlet property="songTitleLabel" destination="qyY-Lq-aUA" id="Fd2-mb-glP"/>
+                        <outlet property="textField" destination="4ac-ne-3mF" id="SBM-Gy-m5O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

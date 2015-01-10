@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA06A964187A807000C9A56C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A963187A807000C9A56C /* Foundation.framework */; };
+		CA06A966187A807000C9A56C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A965187A807000C9A56C /* CoreGraphics.framework */; };
+		CA06A968187A807000C9A56C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A967187A807000C9A56C /* UIKit.framework */; };
+		CA06A96E187A807000C9A56C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA06A96C187A807000C9A56C /* InfoPlist.strings */; };
+		CA06A970187A807000C9A56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06A96F187A807000C9A56C /* main.m */; };
+		CA06A974187A807000C9A56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06A973187A807000C9A56C /* AppDelegate.m */; };
+		CA06A977187A807000C9A56C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA06A975187A807000C9A56C /* Main.storyboard */; };
+		CA06A97A187A807000C9A56C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06A979187A807000C9A56C /* ViewController.m */; };
+		CA06A97C187A807000C9A56C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA06A97B187A807000C9A56C /* Images.xcassets */; };
+		CA06A983187A807000C9A56C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A982187A807000C9A56C /* XCTest.framework */; };
+		CA06A984187A807000C9A56C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A963187A807000C9A56C /* Foundation.framework */; };
+		CA06A985187A807000C9A56C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A967187A807000C9A56C /* UIKit.framework */; };
+		CA06A98D187A807000C9A56C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA06A98B187A807000C9A56C /* InfoPlist.strings */; };
+		CA06A98F187A807000C9A56C /* OpenALPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06A98E187A807000C9A56C /* OpenALPlayerTests.m */; };
+		CA06A99B187A82EC00C9A56C /* AlertChordStroke.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA06A999187A82EC00C9A56C /* AlertChordStroke.wav */; };
+		CA06A99C187A82EC00C9A56C /* BeepGMC500.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA06A99A187A82EC00C9A56C /* BeepGMC500.wav */; };
+		CA06A9A0187A831300C9A56C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA06A99F187A831300C9A56C /* OpenAL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA06A986187A807000C9A56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA06A958187A807000C9A56C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA06A95F187A807000C9A56C;
+			remoteInfo = OpenALPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA06A960187A807000C9A56C /* OpenALPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenALPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA06A963187A807000C9A56C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA06A965187A807000C9A56C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA06A967187A807000C9A56C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA06A96B187A807000C9A56C /* OpenALPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenALPlayer-Info.plist"; sourceTree = "<group>"; };
+		CA06A96D187A807000C9A56C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA06A96F187A807000C9A56C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA06A971187A807000C9A56C /* OpenALPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenALPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		CA06A972187A807000C9A56C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA06A973187A807000C9A56C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA06A976187A807000C9A56C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA06A978187A807000C9A56C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CA06A979187A807000C9A56C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA06A97B187A807000C9A56C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CA06A981187A807000C9A56C /* OpenALPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenALPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA06A982187A807000C9A56C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CA06A98A187A807000C9A56C /* OpenALPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenALPlayerTests-Info.plist"; sourceTree = "<group>"; };
+		CA06A98C187A807000C9A56C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA06A98E187A807000C9A56C /* OpenALPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenALPlayerTests.m; sourceTree = "<group>"; };
+		CA06A999187A82EC00C9A56C /* AlertChordStroke.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AlertChordStroke.wav; sourceTree = "<group>"; };
+		CA06A99A187A82EC00C9A56C /* BeepGMC500.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BeepGMC500.wav; sourceTree = "<group>"; };
+		CA06A99D187A830900C9A56C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CA06A99F187A831300C9A56C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA06A95D187A807000C9A56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA06A9A0187A831300C9A56C /* OpenAL.framework in Frameworks */,
+				CA06A966187A807000C9A56C /* CoreGraphics.framework in Frameworks */,
+				CA06A968187A807000C9A56C /* UIKit.framework in Frameworks */,
+				CA06A964187A807000C9A56C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA06A97E187A807000C9A56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA06A983187A807000C9A56C /* XCTest.framework in Frameworks */,
+				CA06A985187A807000C9A56C /* UIKit.framework in Frameworks */,
+				CA06A984187A807000C9A56C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA06A957187A807000C9A56C = {
+			isa = PBXGroup;
+			children = (
+				CA06A998187A82EC00C9A56C /* resource */,
+				CA06A969187A807000C9A56C /* OpenALPlayer */,
+				CA06A988187A807000C9A56C /* OpenALPlayerTests */,
+				CA06A962187A807000C9A56C /* Frameworks */,
+				CA06A961187A807000C9A56C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA06A961187A807000C9A56C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A960187A807000C9A56C /* OpenALPlayer.app */,
+				CA06A981187A807000C9A56C /* OpenALPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA06A962187A807000C9A56C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A99F187A831300C9A56C /* OpenAL.framework */,
+				CA06A99D187A830900C9A56C /* AudioToolbox.framework */,
+				CA06A963187A807000C9A56C /* Foundation.framework */,
+				CA06A965187A807000C9A56C /* CoreGraphics.framework */,
+				CA06A967187A807000C9A56C /* UIKit.framework */,
+				CA06A982187A807000C9A56C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA06A969187A807000C9A56C /* OpenALPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A972187A807000C9A56C /* AppDelegate.h */,
+				CA06A973187A807000C9A56C /* AppDelegate.m */,
+				CA06A975187A807000C9A56C /* Main.storyboard */,
+				CA06A978187A807000C9A56C /* ViewController.h */,
+				CA06A979187A807000C9A56C /* ViewController.m */,
+				CA06A97B187A807000C9A56C /* Images.xcassets */,
+				CA06A96A187A807000C9A56C /* Supporting Files */,
+			);
+			path = OpenALPlayer;
+			sourceTree = "<group>";
+		};
+		CA06A96A187A807000C9A56C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A96B187A807000C9A56C /* OpenALPlayer-Info.plist */,
+				CA06A96C187A807000C9A56C /* InfoPlist.strings */,
+				CA06A96F187A807000C9A56C /* main.m */,
+				CA06A971187A807000C9A56C /* OpenALPlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA06A988187A807000C9A56C /* OpenALPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A98E187A807000C9A56C /* OpenALPlayerTests.m */,
+				CA06A989187A807000C9A56C /* Supporting Files */,
+			);
+			path = OpenALPlayerTests;
+			sourceTree = "<group>";
+		};
+		CA06A989187A807000C9A56C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A98A187A807000C9A56C /* OpenALPlayerTests-Info.plist */,
+				CA06A98B187A807000C9A56C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA06A998187A82EC00C9A56C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				CA06A999187A82EC00C9A56C /* AlertChordStroke.wav */,
+				CA06A99A187A82EC00C9A56C /* BeepGMC500.wav */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA06A95F187A807000C9A56C /* OpenALPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA06A992187A807000C9A56C /* Build configuration list for PBXNativeTarget "OpenALPlayer" */;
+			buildPhases = (
+				CA06A95C187A807000C9A56C /* Sources */,
+				CA06A95D187A807000C9A56C /* Frameworks */,
+				CA06A95E187A807000C9A56C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenALPlayer;
+			productName = OpenALPlayer;
+			productReference = CA06A960187A807000C9A56C /* OpenALPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA06A980187A807000C9A56C /* OpenALPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA06A995187A807000C9A56C /* Build configuration list for PBXNativeTarget "OpenALPlayerTests" */;
+			buildPhases = (
+				CA06A97D187A807000C9A56C /* Sources */,
+				CA06A97E187A807000C9A56C /* Frameworks */,
+				CA06A97F187A807000C9A56C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA06A987187A807000C9A56C /* PBXTargetDependency */,
+			);
+			name = OpenALPlayerTests;
+			productName = OpenALPlayerTests;
+			productReference = CA06A981187A807000C9A56C /* OpenALPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA06A958187A807000C9A56C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = tonyguan;
+				TargetAttributes = {
+					CA06A980187A807000C9A56C = {
+						TestTargetID = CA06A95F187A807000C9A56C;
+					};
+				};
+			};
+			buildConfigurationList = CA06A95B187A807000C9A56C /* Build configuration list for PBXProject "OpenALPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA06A957187A807000C9A56C;
+			productRefGroup = CA06A961187A807000C9A56C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA06A95F187A807000C9A56C /* OpenALPlayer */,
+				CA06A980187A807000C9A56C /* OpenALPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA06A95E187A807000C9A56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA06A99B187A82EC00C9A56C /* AlertChordStroke.wav in Resources */,
+				CA06A97C187A807000C9A56C /* Images.xcassets in Resources */,
+				CA06A96E187A807000C9A56C /* InfoPlist.strings in Resources */,
+				CA06A977187A807000C9A56C /* Main.storyboard in Resources */,
+				CA06A99C187A82EC00C9A56C /* BeepGMC500.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA06A97F187A807000C9A56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA06A98D187A807000C9A56C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA06A95C187A807000C9A56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA06A97A187A807000C9A56C /* ViewController.m in Sources */,
+				CA06A974187A807000C9A56C /* AppDelegate.m in Sources */,
+				CA06A970187A807000C9A56C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA06A97D187A807000C9A56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA06A98F187A807000C9A56C /* OpenALPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA06A987187A807000C9A56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA06A95F187A807000C9A56C /* OpenALPlayer */;
+			targetProxy = CA06A986187A807000C9A56C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA06A96C187A807000C9A56C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA06A96D187A807000C9A56C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA06A975187A807000C9A56C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA06A976187A807000C9A56C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA06A98B187A807000C9A56C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA06A98C187A807000C9A56C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA06A990187A807000C9A56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA06A991187A807000C9A56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA06A993187A807000C9A56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenALPlayer/OpenALPlayer-Prefix.pch";
+				INFOPLIST_FILE = "OpenALPlayer/OpenALPlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA06A994187A807000C9A56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenALPlayer/OpenALPlayer-Prefix.pch";
+				INFOPLIST_FILE = "OpenALPlayer/OpenALPlayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CA06A996187A807000C9A56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenALPlayer.app/OpenALPlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenALPlayer/OpenALPlayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenALPlayerTests/OpenALPlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CA06A997187A807000C9A56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenALPlayer.app/OpenALPlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenALPlayer/OpenALPlayer-Prefix.pch";
+				INFOPLIST_FILE = "OpenALPlayerTests/OpenALPlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA06A95B187A807000C9A56C /* Build configuration list for PBXProject "OpenALPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA06A990187A807000C9A56C /* Debug */,
+				CA06A991187A807000C9A56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA06A992187A807000C9A56C /* Build configuration list for PBXNativeTarget "OpenALPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA06A993187A807000C9A56C /* Debug */,
+				CA06A994187A807000C9A56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA06A995187A807000C9A56C /* Build configuration list for PBXNativeTarget "OpenALPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA06A996187A807000C9A56C /* Debug */,
+				CA06A997187A807000C9A56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA06A958187A807000C9A56C /* Project object */;
+}

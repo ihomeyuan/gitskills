@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b12-am-JzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="X61-bx-5JD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYO-WI-7sr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa9-wK-Bhh">
+                                <rect key="frame" x="85" y="429" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="从照相机中抓取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPhotoCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P52-AL-St4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxO-Iu-289">
+                                <rect key="frame" x="85" y="350" width="150" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RVZ-kZ-MlO"/>
+                                    <constraint firstAttribute="width" constant="150" id="gXT-Kt-OkD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="从图片库中选取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPhotoLibrary:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z8o-HI-Hwk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VYO-WI-7sr" secondAttribute="bottom" id="3s8-sa-tkf"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="centerX" secondItem="Oa9-wK-Bhh" secondAttribute="centerX" id="5F6-41-Ut7"/>
+                            <constraint firstItem="Oa9-wK-Bhh" firstAttribute="top" secondItem="dxO-Iu-289" secondAttribute="bottom" constant="35" id="7Dl-O4-Kgi"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="top" secondItem="b12-am-JzH" secondAttribute="bottom" constant="330" id="HZf-4E-Yo3"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="II5-yH-owB"/>
+                            <constraint firstItem="Oa9-wK-Bhh" firstAttribute="leading" secondItem="dxO-Iu-289" secondAttribute="leading" id="U98-vK-rtT"/>
+                            <constraint firstItem="VYO-WI-7sr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Wkh-m8-V0w"/>
+                            <constraint firstItem="X61-bx-5JD" firstAttribute="top" secondItem="Oa9-wK-Bhh" secondAttribute="bottom" constant="109" id="dFg-jo-nCn"/>
+                            <constraint firstItem="dxO-Iu-289" firstAttribute="trailing" secondItem="Oa9-wK-Bhh" secondAttribute="trailing" id="tpl-CR-UEc"/>
+                            <constraint firstAttribute="trailing" secondItem="VYO-WI-7sr" secondAttribute="trailing" id="uJn-uF-E7K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="VYO-WI-7sr" id="2LN-z7-fxI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,28 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//定义 根据类别1查询类别2 通知
+#define	Category2ByCategory1Notification      @"Category2ByCategory1"
+//定义 根据类别2查询课程 通知
+#define	CourseByCategory2Notification         @"CourseByCategory2"
+//定义 根据类别1查询课程 通知
+#define	CourseByCategory1Notification         @"CourseByCategory1"
+
+//Webservice基础URL
+#define Webservice_URL_BASE         @"http://localhost/school/"
+//流媒体服务URL
+#define Streaming_Media_URL_BASE    @"http://localhost/stream/"
