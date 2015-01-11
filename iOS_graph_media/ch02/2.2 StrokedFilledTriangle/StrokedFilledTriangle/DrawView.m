@@ -32,16 +32,22 @@
 	[[UIColor blackColor] setStroke];
     // 设置红色条填充参数
 	[[UIColor redColor] setFill];
+    
+    CGContextSaveGState(context);//每一个graphics context 维护一个graphics states栈。这个函数将当前的state压入这个栈
+    
+    [[UIColor greenColor] setFill];
+    
+    CGContextRestoreGState(context);//出栈，并设置当前state为出栈的state
 	//绘制路径
 	CGContextDrawPath(context, kCGPathFillStroke);//使用给定的模式绘制并清除当前path
     
     //当前path是什么？path 是一系列图形或线段的数学描述。个人猜测UIGraphicsGetCurrentContext或者UIView在drawRect的时候，给我们准备了一个当前的path (也许可以用数组来描述path)
     
-    CGContextMoveToPoint(context,160,150);
-    CGContextAddLineToPoint(context, 225,10);
-    CGContextAddLineToPoint(context, 310,150);
-    CGContextClosePath(context);
-    CGContextDrawPath(context, kCGPathFillStroke);
+//    CGContextMoveToPoint(context,160,150);
+//    CGContextAddLineToPoint(context, 225,10);
+//    CGContextAddLineToPoint(context, 310,150);
+//    CGContextClosePath(context);
+//    CGContextDrawPath(context, kCGPathFillStroke);
     
     
 }
