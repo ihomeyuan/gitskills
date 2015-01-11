@@ -31,7 +31,7 @@
 	CGContextRef cgContext = UIGraphicsGetCurrentContext();
     
     CGContextMoveToPoint(cgContext, 333, 0);
-    CGContextAddCurveToPoint(cgContext, 333, 0, 332, 26, 330, 26);
+    CGContextAddCurveToPoint(cgContext, 333, 0, 332, 26, 330, 26);//追加一条从当前点到控制点1、2和目标点的三次方贝塞尔曲线，目标点被设置为当前点
     CGContextAddCurveToPoint(cgContext, 330, 26, 299, 20, 299, 17);
     CGContextAddLineToPoint(cgContext, 296, 17);
     CGContextAddCurveToPoint(cgContext, 296, 17, 296, 19, 291, 19);
