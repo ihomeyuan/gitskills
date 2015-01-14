@@ -22,6 +22,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        //self.backgroundColor = [UIColor grayColor];
     }
     return self;
 }
@@ -37,8 +38,8 @@
 	CGContextSaveGState(context);
     
 	CGContextTranslateCTM (context, 100, 50);
-    //CGContextScaleCTM (context, .5, .75);
-    //CGContextRotateCTM (context, radians(45.));
+    CGContextScaleCTM (context, .5, .75);
+    CGContextRotateCTM (context, radians(45.));//正角度逆时针旋转
     
 	CGRect touchRect = CGRectMake(0, 0, img.size.width, img.size.height);
 	CGContextDrawImage(context, touchRect, image);

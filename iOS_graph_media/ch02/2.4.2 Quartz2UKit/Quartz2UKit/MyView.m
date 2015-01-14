@@ -37,7 +37,7 @@
 	
 	CGContextSaveGState(context);
     
-    CGContextTranslateCTM(context, 0, img.size.height);
+    CGContextTranslateCTM(context, 0, img.size.height);//drawRect的默认user coordinate system 原点在左上角
     CGContextScaleCTM(context, 1, -1);
 
 	CGRect touchRect = CGRectMake(0, 0, img.size.width, img.size.height);

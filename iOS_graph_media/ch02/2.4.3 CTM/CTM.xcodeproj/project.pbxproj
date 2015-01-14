@@ -16,26 +16,11 @@
 		CA3B745E1876DDC400FBAEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3B745C1876DDC400FBAEEC /* Main.storyboard */; };
 		CA3B74611876DDC400FBAEEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B74601876DDC400FBAEEC /* ViewController.m */; };
 		CA3B74631876DDC400FBAEEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3B74621876DDC400FBAEEC /* Images.xcassets */; };
-		CA3B746A1876DDC500FBAEEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3B74691876DDC500FBAEEC /* XCTest.framework */; };
-		CA3B746B1876DDC500FBAEEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3B744A1876DDC300FBAEEC /* Foundation.framework */; };
-		CA3B746C1876DDC500FBAEEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3B744E1876DDC400FBAEEC /* UIKit.framework */; };
-		CA3B74741876DDC500FBAEEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA3B74721876DDC500FBAEEC /* InfoPlist.strings */; };
-		CA3B74761876DDC500FBAEEC /* Quartz2UKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B74751876DDC500FBAEEC /* Quartz2UKitTests.m */; };
 		CA3B74811876DDD600FBAEEC /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B74801876DDD600FBAEEC /* MyView.m */; };
 		CA3B748D1876DE0A00FBAEEC /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B748A1876DE0A00FBAEEC /* cat.png */; };
 		CA3B748E1876DE0A00FBAEEC /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B748B1876DE0A00FBAEEC /* dog.png */; };
 		CA3B748F1876DE0A00FBAEEC /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B748C1876DE0A00FBAEEC /* rabbit.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CA3B746D1876DDC500FBAEEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CA3B743F1876DDC300FBAEEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CA3B74461876DDC300FBAEEC;
-			remoteInfo = Quartz2UKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CA3B74471876DDC300FBAEEC /* CTM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,11 +37,9 @@
 		CA3B745F1876DDC400FBAEEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CA3B74601876DDC400FBAEEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CA3B74621876DDC400FBAEEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CA3B74681876DDC500FBAEEC /* CTMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3B74691876DDC500FBAEEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CA3B74711876DDC500FBAEEC /* CTMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTMTests-Info.plist"; sourceTree = "<group>"; };
 		CA3B74731876DDC500FBAEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CA3B74751876DDC500FBAEEC /* Quartz2UKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2UKitTests.m; sourceTree = "<group>"; };
 		CA3B747F1876DDD600FBAEEC /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		CA3B74801876DDD600FBAEEC /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		CA3B748A1876DE0A00FBAEEC /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
@@ -72,16 +55,6 @@
 				CA3B744D1876DDC400FBAEEC /* CoreGraphics.framework in Frameworks */,
 				CA3B744F1876DDC400FBAEEC /* UIKit.framework in Frameworks */,
 				CA3B744B1876DDC300FBAEEC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA3B74651876DDC500FBAEEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA3B746A1876DDC500FBAEEC /* XCTest.framework in Frameworks */,
-				CA3B746C1876DDC500FBAEEC /* UIKit.framework in Frameworks */,
-				CA3B746B1876DDC500FBAEEC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				CA3B74471876DDC300FBAEEC /* CTM.app */,
-				CA3B74681876DDC500FBAEEC /* CTMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +122,6 @@
 		CA3B746F1876DDC500FBAEEC /* CTMTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA3B74751876DDC500FBAEEC /* Quartz2UKitTests.m */,
 				CA3B74701876DDC500FBAEEC /* Supporting Files */,
 			);
 			name = CTMTests;
@@ -196,24 +167,6 @@
 			productReference = CA3B74471876DDC300FBAEEC /* CTM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CA3B74671876DDC500FBAEEC /* CTMTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA3B747C1876DDC500FBAEEC /* Build configuration list for PBXNativeTarget "CTMTests" */;
-			buildPhases = (
-				CA3B74641876DDC500FBAEEC /* Sources */,
-				CA3B74651876DDC500FBAEEC /* Frameworks */,
-				CA3B74661876DDC500FBAEEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CA3B746E1876DDC500FBAEEC /* PBXTargetDependency */,
-			);
-			name = CTMTests;
-			productName = Quartz2UKitTests;
-			productReference = CA3B74681876DDC500FBAEEC /* CTMTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,11 +175,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = tonyguan;
-				TargetAttributes = {
-					CA3B74671876DDC500FBAEEC = {
-						TestTargetID = CA3B74461876DDC300FBAEEC;
-					};
-				};
 			};
 			buildConfigurationList = CA3B74421876DDC300FBAEEC /* Build configuration list for PBXProject "CTM" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -242,7 +190,6 @@
 			projectRoot = "";
 			targets = (
 				CA3B74461876DDC300FBAEEC /* CTM */,
-				CA3B74671876DDC500FBAEEC /* CTMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,14 +208,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA3B74661876DDC500FBAEEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA3B74741876DDC500FBAEEC /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -283,23 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA3B74641876DDC500FBAEEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA3B74761876DDC500FBAEEC /* Quartz2UKitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CA3B746E1876DDC500FBAEEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CA3B74461876DDC300FBAEEC /* CTM */;
-			targetProxy = CA3B746D1876DDC500FBAEEC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA3B74531876DDC400FBAEEC /* InfoPlist.strings */ = {
@@ -427,48 +350,6 @@
 			};
 			name = Release;
 		};
-		CA3B747D1876DDC500FBAEEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quartz2UKit.app/Quartz2UKit";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Quartz2UKit/Quartz2UKit-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Quartz2UKitTests/CTMTests-Info.plist";
-				PRODUCT_NAME = CTMTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CA3B747E1876DDC500FBAEEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quartz2UKit.app/Quartz2UKit";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Quartz2UKit/Quartz2UKit-Prefix.pch";
-				INFOPLIST_FILE = "Quartz2UKitTests/CTMTests-Info.plist";
-				PRODUCT_NAME = CTMTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,15 +367,6 @@
 			buildConfigurations = (
 				CA3B747A1876DDC500FBAEEC /* Debug */,
 				CA3B747B1876DDC500FBAEEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CA3B747C1876DDC500FBAEEC /* Build configuration list for PBXNativeTarget "CTMTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA3B747D1876DDC500FBAEEC /* Debug */,
-				CA3B747E1876DDC500FBAEEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
