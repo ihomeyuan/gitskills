@@ -39,7 +39,7 @@
     
 	CGContextTranslateCTM (context, 100, 50);
     CGContextScaleCTM (context, .5, .75);
-    CGContextRotateCTM (context, radians(45.));//正角度逆时针旋转
+    CGContextRotateCTM (context, radians(45.));//正角度逆时针旋转 //由于drawRect的坐标系Y轴和graphics的相反，所以旋转也是相反的。
     
 	CGRect touchRect = CGRectMake(0, 0, img.size.width, img.size.height);
 	CGContextDrawImage(context, touchRect, image);
