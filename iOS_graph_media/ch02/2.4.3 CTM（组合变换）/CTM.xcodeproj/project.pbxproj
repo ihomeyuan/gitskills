@@ -20,7 +20,6 @@
 		CA3B746B1876DDC500FBAEEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3B744A1876DDC300FBAEEC /* Foundation.framework */; };
 		CA3B746C1876DDC500FBAEEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3B744E1876DDC400FBAEEC /* UIKit.framework */; };
 		CA3B74741876DDC500FBAEEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA3B74721876DDC500FBAEEC /* InfoPlist.strings */; };
-		CA3B74761876DDC500FBAEEC /* Quartz2UKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B74751876DDC500FBAEEC /* Quartz2UKitTests.m */; };
 		CA3B74811876DDD600FBAEEC /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B74801876DDD600FBAEEC /* MyView.m */; };
 		CA3B748D1876DE0A00FBAEEC /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B748A1876DE0A00FBAEEC /* cat.png */; };
 		CA3B748E1876DE0A00FBAEEC /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B748B1876DE0A00FBAEEC /* dog.png */; };
@@ -56,7 +55,6 @@
 		CA3B74691876DDC500FBAEEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CA3B74711876DDC500FBAEEC /* CTMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTMTests-Info.plist"; sourceTree = "<group>"; };
 		CA3B74731876DDC500FBAEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CA3B74751876DDC500FBAEEC /* Quartz2UKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2UKitTests.m; sourceTree = "<group>"; };
 		CA3B747F1876DDD600FBAEEC /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		CA3B74801876DDD600FBAEEC /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		CA3B748A1876DE0A00FBAEEC /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		CA3B746F1876DDC500FBAEEC /* CTMTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA3B74751876DDC500FBAEEC /* Quartz2UKitTests.m */,
 				CA3B74701876DDC500FBAEEC /* Supporting Files */,
 			);
 			name = CTMTests;
@@ -287,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3B74761876DDC500FBAEEC /* Quartz2UKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

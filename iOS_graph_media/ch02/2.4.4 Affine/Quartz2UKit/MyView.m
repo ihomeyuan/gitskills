@@ -38,6 +38,9 @@
     
     
     CGAffineTransform myAffine = CGAffineTransformMakeTranslation(0, img.size.height);
+    //                      a  b  0
+    //[x' y' 1] = [x y 1]*  c  d  0
+    //                      tx ty 1
 	myAffine = CGAffineTransformScale(myAffine, 1, -1);
 	CGContextConcatCTM(context, myAffine);
     
