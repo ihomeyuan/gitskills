@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _image = [UIImage imageNamed:@"SkyDrive340.png"];
+    _image = [[UIImage imageNamed:@"SkyDrive340.png"] retain];
     _imageView.image = _image;
     
     flag  = 0;
@@ -33,6 +33,7 @@
 }
 
 - (void)dealloc {
+    [_image release];
     [_imageView release];
     [_slider release];
     [_label release];
@@ -91,7 +92,7 @@
 }
 
 - (void)filterGaussianBlur {
-    
+    //各种内置滤镜https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIBoxBlur
     CIContext *context = [CIContext contextWithOptions:nil];
 	CIImage *cImage = [CIImage imageWithCGImage:[_image CGImage]];
 	CIImage *result;
