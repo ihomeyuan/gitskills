@@ -99,7 +99,7 @@
         }
         
     }
-    
+    /*因为Core Image 坐标原点在左下角 UIKit 原点在左上角*/
     [resultView setTransform:CGAffineTransformMakeScale(1, -1)];
     
     [resultView release];
